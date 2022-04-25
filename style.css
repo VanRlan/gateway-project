@@ -1,0 +1,406 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+hr {
+  height: 10px;
+  background-color: #e84393;
+  background-image: linear-gradient(315deg, #e84393 30%, #000000 60%);
+}
+
+.line {
+  border-bottom: 2px solid black;
+  padding-bottom: 3px;
+}
+
+/* Nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-nav .logo {
+  width: 130px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a {
+  padding-bottom: 2px;
+  color: #bc002d;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+  margin-top: 16px;
+}
+
+/* css slideshow */
+#slideshow {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 1100px;
+  height: 510px;
+}
+.slide-wrapper {
+  width: 4400px;
+  animation-name: apple;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.slide {
+  float: left;
+  height: 510px;
+  width: 1100px;
+}
+.slide-number {
+  color: #fff;
+  text-align: center;
+}
+.slide:nth-child(1) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://lp-cms-production.imgix.net/2021-02/Tokyo%20Main.jpg");
+}
+.slide:nth-child(2) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://handluggageonly.co.uk/wp-content/uploads/2017/05/iStock-509472000.jpg");
+}
+.slide:nth-child(3) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn-japantimes.com/wp-content/uploads/2021/06/np_file_95168.jpeg");
+}
+.slide:nth-child(4) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://lp-cms-production.imgix.net/2019-06/fa6b8fcce2932f0b7b04d383035192ff-yokohama.jpg");
+}
+@keyframes apple {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -1100px;
+  }
+  50% {
+    margin-left: -1100px;
+  }
+  60% {
+    margin-left: -2200px;
+  }
+  70% {
+    margin-left: -2200px;
+  }
+  80% {
+    margin-left: -3300px;
+  }
+  90% {
+    margin-left: -3300px;
+  }
+}
+
+/* Home cards */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.home-cards img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.home-cards h2 {
+  margin-bottom: 5px;
+}
+
+.home-cards a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #bc002d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+
+/* TO DO */
+.intro {
+  text-align: center;
+  font-size: 20px;
+  color: #111;
+  margin: 15px auto;
+  text-transform: uppercase;
+}
+/* Icon 
+  .intro img {
+    height: 30px;
+    width: 40px;
+    padding-left: 5px;
+    color: #BC002D;
+  }
+  */
+
+/* Contact Page */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #bc002d;
+  margin-bottom: 20px;
+}
+.container-two {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px;
+  height: 600px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-two .formBx {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-two .formBx form {
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 75px;
+}
+.container-two .formBx form h2 {
+  color: #111;
+  font-weight: 500;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+.container-two .formBx form .inputBox {
+  position: relative;
+  margin-bottom: 40px;
+}
+.container-two .formBx form .inputBox:last-child {
+  margin-bottom: 0px;
+}
+.container-two .formBx form .inputBox input,
+.container-two .formBx form .inputBox textarea {
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #111;
+  padding-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-bottom: 2px solid #111;
+  resize: none;
+}
+.container-two .formBx form .inputBox textarea {
+  height: 100px;
+}
+.container-two .formBx form .inputBox input[type="submit"] {
+  background: #111;
+  padding: 8px 20px;
+  margin-top: -10px;
+  width: 100px;
+  cursor: pointer;
+  background: #bc002d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.container-two .formBx form .inputBox input[type="submit"]:focus {
+  background: #111;
+  color: #111;
+}
+.container-two .formBx form .inputBox label {
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  color: #111;
+  transition: all 0.2s;
+}
+.container-two .formBx form .inputBox input:focus ~ label,
+.container-two .formBx form .inputBox textarea:focus ~ label,
+.container-two .formBx form .inputBox input:valid ~ label,
+.container-two .formBx form .inputBox textarea:valid ~ label {
+  transform: translateY(-24px);
+  color: #bc002d;
+  font-size: 14px;
+}
+.container-two .formBx form .inputBox input:focus,
+.container-two .formBx form .inputBox textarea:focus,
+.container-two .formBx form .inputBox input:valid,
+.container-two .formBx form .inputBox textarea:valid {
+  border-bottom-color: #bc002d;
+}
+.container-two .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.container-two .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 179, 197);
+  transform-origin: bottom;
+  transform: skewX(-25deg) translateX(10%);
+}
+.container-two .imgBx img {
+  position: absolute;
+  bottom: 0;
+  max-height: 95%;
+}
+
+/* Japan */
+.japan {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.671)),
+    url("https://d1wv60jaas5mse.cloudfront.net/images/uploads/production/post_images/ca8404f2437943_Night%20lanterns%20with%20blossom.jpg")
+      no-repeat center center/cover;
+  margin-bottom: 20px;
+}
+
+.japan .content {
+  width: 75%;
+  padding: 100px 0 0 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Footer */
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 13px;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer div i {
+  margin-right: 10px;
+}
+
+.myLogo {
+  height: auto;
+  width: auto;
+}
+
+/* .globe {
+    margin: -10px;
+  } */
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.footer li:hover {
+  border-bottom: 2px solid black;
+}
+
+@media (max-width: 700px) {
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .japan .content {
+    width: 85%;
+  }
+
+  #slideshow {
+    width: 95%;
+  }
+}
